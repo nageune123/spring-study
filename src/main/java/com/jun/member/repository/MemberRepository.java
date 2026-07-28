@@ -3,7 +3,7 @@ package com.jun.member.repository;
 import com.jun.member.domain.Member;
 import java.util.ArrayList;
 import java.util.List;
-
+import java.util.Optional;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -24,4 +24,8 @@ public class MemberRepository {
     public List<Member> findAll() {
         return members;
     }
+    public Optional<Member> findByName(String name) {
+        return members.stream().filter(member -> member.getName().equals(name)).findFirst();
+
+}
 }
