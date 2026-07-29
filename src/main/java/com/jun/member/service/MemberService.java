@@ -15,6 +15,7 @@ private final MemberRepository memberRepository;
 public MemberService (MemberRepository memberRepository){
  this.memberRepository = memberRepository;
 }
+
 public void join(Member member) {
 Optional<Member> result = memberRepository.findByName(member.getName());
 if (result.isPresent()) {
