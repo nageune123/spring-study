@@ -14,7 +14,7 @@ import java.util.Optional;
 import org.springframework.stereotype.Repository;
 import java.sql.Statement;
 
-@Repository
+
 public class JdbcTemplateMemberRepository implements MemberRepository {
 
     private final JdbcTemplate jdbcTemplate;
