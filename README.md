@@ -106,3 +106,8 @@ JPA는 객체 중심
 ## 실행 방법
 
 ./gradlew bootRun
+
+## Spring Study
+
+- Day01 : JPA 기본(Entity, EntityManager, 영속성 컨텍스트)
+- Day02 : 연관관계(@ManyToOne, @OneToMany), mappedBy, Lazy Loading, Fetch Join
